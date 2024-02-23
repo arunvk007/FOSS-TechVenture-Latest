@@ -107,6 +107,11 @@
 #contact_sec{
     width: 100%;
 } 
+
+.whocan{
+    color: black;
+    font-weight: lighter;
+}
   
 .glow-on-hover {
     width: 120px;
@@ -176,3 +181,45 @@
     100% { background-position: 0 0; }
 }
 
+#scroll-container {
+    /* border: 1px solid black; */
+    font-size: 18px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+  
+  #scroll-text {
+    background-color: yellow;
+    display: inline-block;
+    margin-right: 5px;
+    /* animation properties */
+    animation: my-animation 30s linear infinite;
+  }
+  
+  #scroll-text span{
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
